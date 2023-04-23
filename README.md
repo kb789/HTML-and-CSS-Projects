@@ -1,3 +1,5 @@
 # HTML-and-CSS-Projects
 
-## This repository will contain projects created as part of the Tech Academy's HTML amd CSS Course.
+## Introduction
+
+This repository will include projects created for the Tech Academy's HTML and CSS class.
