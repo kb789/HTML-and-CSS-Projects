@@ -8,3 +8,12 @@ text-align: right;
 #shadow {
  text-shadow: #FC0 1px 0 10px;
 }
+
+span {
+	color: blue;
+}
+
+section {
+	color:green;
+	
+}
