@@ -1,5 +1,4 @@
-/*---------Generic Styles
-----------------------*/
+
 html {
     font-family:sans-serif;
     font-size: 62.5%;
@@ -18,11 +17,11 @@ body {
 
 
 }
-/*
+
 footer, nav  {
     display: block;
 }
-*/
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
@@ -105,25 +104,22 @@ section {
     margin-left: auto;
 }
 
-/*
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-*/
 
-/*
+
 row {
 margin-right: -15px;
 margin-left: -15px;
 }
-*/
+
 
 .clearfix::after,
-.container::after /*,
-.navbar::after */ {
+.container::after {
 clear:both;
 display: table;
 content: " ";
