@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title</title>
 		<meta charset="utf-8">
+		<title>Botanical Gardens | Visit</title>
+		<link rel="stylesheet" href="./css/shared.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
 	
 		<!-- NAV -->
-		<nav>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#join"><li>JOIN</li></a>
-					<a href="#video"><li>INSPIRATIONS</li></a>
+					<a href="#contact"><li>JOIN</li></a>
 				</ul>
 			</div>
-		</nav>
+		</div>
 		<!-- END NAV -->
 		
 		<!-- HOME -->
 		<div id="home">
-			<header>
-				<div>
-					<h1>Botanical Gardens</h1>
-					<p>Come visit us! We are open everyday except Monday, from <time datetime="09:00">9:00 am</time> to <time datetime="17:00">5:00 pm</time>. Admission is $8.00 and parking is free. </p>
+			<div class="container"> 
+				<div class="text-center">
+					<span class="head-main">Botanical Gardens</span>
+					<br/>
+					<span class="head-sub-main">Anytown, NY</span>
 				</div>
-			</header>
+			</div>
 		</div>
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
 		
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-				<div>
+				<div class="flex-container">
 				
 					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_1.jpg" alt="cottage garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Cottage Garden</p>
 							</div>
@@ -50,10 +52,10 @@
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_2.jpg" alt="water garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Water Garden</p>
 							</div>
@@ -62,10 +64,10 @@
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_3.jpg" alt="english garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our English Country Garden</p>
 							</div>
@@ -74,10 +76,10 @@
 					<!-- END PHOTO CONTAINER 3 -->
 					
 					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_4.jpg" alt="japanese garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Japanese Garden</p>
 							</div>
@@ -86,10 +88,10 @@
 					<!-- END PHOTO CONTAINER 4 -->
 					
 					<!-- PHOTO CONTAINER 5 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_5.jpg" alt="rock garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Rock Garden</p>
 							</div>
@@ -98,10 +100,10 @@
 					<!-- END PHOTO CONTAINER 5 -->
 					
 					<!-- PHOTO CONTAINER 6 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_6.jpg" alt="tropical garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Tropical Garden</p>
 							</div>
@@ -111,10 +113,10 @@
 					
 					
 					<!-- PHOTO CONTAINER 7 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_7.jpg" alt="formal garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Formal Garden</p>
 							</div>
@@ -124,10 +126,10 @@
 					
 					
 					<!-- PHOTO CONTAINER 8 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_8.jpg" alt="pollinator garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Pollinator Garden</p>
 							</div>
@@ -137,10 +139,10 @@
 					
 					
 					<!-- PHOTO CONTAINER 9 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumb_9.jpg" alt="rose garden">
-							<div>
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Our Rose Garden</p>
 							</div>
@@ -151,17 +153,17 @@
 			</div>	
 		</section>
 		
-		<!-- JOIN -->
-		<section>
-			<div id="join">
-				<div>
-					<h1>Join</h1>
-					<div>
-						<h2> <span>Become a member ; Support our gardens</span>
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Join</h1>
+					<div class="reservation">
+						<h2> <span>Support our gardens by becoming a member</span>
 							<br/> And enjoy many exclusive benefits!
 						</h2>
-						<p>
-						Please provide us with your basic information
+						<p class="rsvp-text">
+						Please fill out the form below to get started.
 						</p>
 						<div>
 							<form action="" method="post">
@@ -172,7 +174,7 @@
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
@@ -182,35 +184,10 @@
 			</div>
 		</section>
 		
-		<!-- END JOIN -->
-		<!-- VIDEOS -->
+		<!-- END RSVP -->
+	
 		
-		<section>
-			<div id="video">
-				<h1>Garden Inspirations</h1>
-				<div>
-				
-					<!--VIDEO CONTAINER 1-->
-					<div>
-						<h2>Check out some famous gardens from around the world that have inspired us...</h2>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/J6oDTn_ENto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					</div>
-					<!--VIDEO CONTAINER 1 END-->
-					
-					<!--VIDEO CONTAINER 2-->
-					<div>
-						<h2>Or get started on creating your own garden!</h2>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/B0DrWAUsNSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					</div>
-					<!--VIDEO CONTAINER 2 END-->
-						
-				</div>
-			</div>
-		</section>
-		
-		<!--END VIDEOS-->
-		<!-- FOOTER -->
-		<footer>
+		<div id="footer">
 			www.thebotanicalgardens.com &nbsp;|&nbsp; &copy; 2023
 		</footer>
 		<!-- END FOOTER -->
