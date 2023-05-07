@@ -60,11 +60,6 @@ header li a {
 }
 
 
-.gallery-heading {
-    color:black;
-    text-align:center;
-}
-
 .gallery-container {
     width: 80%;
     margin: 2rem auto; 
@@ -130,11 +125,15 @@ header li a {
 
 } 
 
-.contact-heading {
-    padding:4%;
+.main-heading {
+   
     text-align:center;
 }
 
+.sub-heading {
+    text-align:center;
+
+}
 
 input[type=text] {
     outline:none;
@@ -151,6 +150,23 @@ input[type=text] {
     box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
   }
 
+  .submit input[type="submit"] {
+    color: #000;
+    cursor:pointer;
+    border:none;
+    font-weight:900;
+    outline:none;
+    text-align:center;
+    font-family:'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width:25%;
+    font-size:18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius:7px;
+    background-color: #E5DAC4;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+  }
   .video-container {
    width: 70%;
    background-color: #E5DAC4;
@@ -162,14 +178,29 @@ input[type=text] {
   iframe {
     margin:auto;
     display:block;
+    padding-bottom:2%;
   }
 
   #footer {
     background-color: #C65871;
-    color: #000;
+    color: #E5DAC4;
     text-shadow: 2px 2px 8px 0 rgba(0,0,0,1);
     padding: 20px 50px 20px 50px;
     text-align:center;
+    
+}
+
+#paw-icon {
+    height:50px;
+    margin: 0 auto;
+    display:block;
+}
+
+hr {
+    border: 1px solid white;
+    
+    margin-bottom:4%;
+    
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
