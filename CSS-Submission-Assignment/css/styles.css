@@ -26,7 +26,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 3pt;
     word-spacing: 8pt;
     font-weight:200;
@@ -62,7 +62,7 @@ header li a {
 
 .gallery-container {
     width: 80%;
-    margin: 2rem auto; 
+    margin: 3.5rem auto; 
     
 }
 
@@ -122,23 +122,35 @@ header li a {
     border: 1px solid #808080;
     border-radius: 7px;
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
-
+    margin-top:2%;
 } 
 
 .main-heading {
-   
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align:center;
 }
 
 .sub-heading {
     text-align:center;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 30px 20px 0px 20px;
+    text-transform:uppercase;
 
 }
 
 input[type=text] {
     outline:none;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 12px 0;
     box-sizing: border-box;
     width:100%;
     border-top: 1px solid #3F4E13;
@@ -153,16 +165,16 @@ input[type=text] {
   .submit input[type="submit"] {
     color: #000;
     cursor:pointer;
-    border:none;
+    border:1px solid #424549;
     font-weight:900;
     outline:none;
     text-align:center;
-    font-family:'Raleway', sans-serif;
-    margin: 0px 3%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:25px;
     padding: 7px 0px;
     width:25%;
     font-size:18px;
-    transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius:7px;
     background-color: #E5DAC4;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
@@ -176,7 +188,7 @@ input[type=text] {
   }
   
   iframe {
-    margin:auto;
+    margin:0 auto;
     display:block;
     padding-bottom:2%;
   }
@@ -190,20 +202,20 @@ input[type=text] {
     
 }
 
-#paw-icon {
-    height:50px;
+.paw-icon {
+    height:45px;
     margin: 0 auto;
     display:block;
+    margin-bottom:20px;
 }
 
 hr {
     border: 1px solid white;
-    
     margin-bottom:4%;
-    
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
+
 @media screen and (max-width: 1400px) {
     .gallery-column {
         padding-left:4%;
@@ -213,11 +225,9 @@ hr {
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  
   @media screen and (max-width: 950px) {
     .gallery-column {
-      
-      
       flex: 100%;
       max-width: 100%;
     }
