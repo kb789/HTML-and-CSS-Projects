@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This repository includes projects created for the Tech Academy's HTML and CSS class.
+These are some sample sites I made using HTML and CSS.
 
 ## Projects
 
-* Bontanical Gardens Site
-* Movie Theater Site
-* Animal Shelter Site
+* [Bontanical Gardens Site]
+* [Movie Theater Site]
+* [Animal Shelter Site]
 
 ### Botanical Gardens Site
 
