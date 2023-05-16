@@ -17,6 +17,6 @@ This is an example website that I made for a fictional Botanical Gardens. It is 
 This is an example website that I made for a fictional Movie Theater. It is styled using Bootstrap 4. It utilizes the Bootstrap grid system for layout and includes a navbar, jumbotron, cards, and other Bootstrap components.
 
 ### Animal Shelter Site
-This is an example website that I made for a fictional Animal Shelter. It is styled using CSS.
+This is an example website that I made for a fictional Animal Shelter. It is styled using CSS and has, among other features, an image gallery, a contact form, and videos. 
 
 
