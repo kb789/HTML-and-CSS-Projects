@@ -5,6 +5,9 @@
 		<title>Botanical Gardens | Visit</title>
 		<link rel="stylesheet" href="./css/shared.css">
 		<link rel="stylesheet" href="./css/animations.css">
+		<script src="js/onepage.js" defer></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 	<body>
 	
@@ -37,122 +40,69 @@
 		<section id="gallery">
 			<div class="container">
 				<h1>Gallery</h1>
-				<div class="flex-container">
-				
-					<!-- PHOTO CONTAINER 1 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_1.jpg" alt="cottage garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Cottage Garden</p>
-							</div>
-						</div>
+				<div class="row">
+					<div class="column">
+					  <img src="images/thumb/thumb_5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 					</div>
-					<!-- END PHOTO CONTAINER 1 -->
-					
-					<!-- PHOTO CONTAINER 2 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_2.jpg" alt="water garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Water Garden</p>
-							</div>
-						</div>
+					<div class="column">
+					  <img src="images/thumb/thumb_7.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 					</div>
-					<!-- END PHOTO CONTAINER 2 -->
-					
-					<!-- PHOTO CONTAINER 3 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_3.jpg" alt="english garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our English Country Garden</p>
-							</div>
-						</div>
+					<div class="column">
+					  <img src="images/thumb/thumb_8.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 					</div>
-					<!-- END PHOTO CONTAINER 3 -->
-					
-					<!-- PHOTO CONTAINER 4 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_4.jpg" alt="japanese garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Japanese Garden</p>
-							</div>
-						</div>
+					<div class="column">
+					  <img src="images/thumb/thumb_9.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
 					</div>
-					<!-- END PHOTO CONTAINER 4 -->
-					
-					<!-- PHOTO CONTAINER 5 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_5.jpg" alt="rock garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Rock Garden</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 5 -->
-					
-					<!-- PHOTO CONTAINER 6 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_6.jpg" alt="tropical garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Tropical Garden</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 6 -->
-					
-					
-					<!-- PHOTO CONTAINER 7 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_7.jpg" alt="formal garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Formal Garden</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 7 -->
-					
-					
-					<!-- PHOTO CONTAINER 8 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_8.jpg" alt="pollinator garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Pollinator Garden</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 8 -->
-					
-					
-					<!-- PHOTO CONTAINER 9 -->
-					<div class="photo-container">
-						<div class="photo">
-						<img src="./images/thumb/thumb_9.jpg" alt="rose garden">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Our Rose Garden</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 9 -->
-				</div>
+				  </div>
 			</div>	
 		</section>
-		
+		<div id="myModal" class="modal">
+			<button class="close" onclick="closeModal()">X</button>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="images/thumb/pic_5.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="images/thumb/pic_7.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="images/thumb/pic_8.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="images/thumb/pic_9.jpg" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_5.jpg" style="width:100%" onclick="currentSlide(1)" alt="Our Rock Garden">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_7.jpg" style="width:100%" onclick="currentSlide(2)" alt="Our Formal Garden">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_8.jpg" style="width:100%" onclick="currentSlide(3)" alt="Our Wildflower Garden">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="images/thumb/pic_9.jpg" style="width:100%" onclick="currentSlide(4)" alt="Our Rose Garden">
+			  </div>
+			</div>
+		  </div>
+		  
 		<!-- RSVP -->
 		<section id="contact">
 			<div class="container">
