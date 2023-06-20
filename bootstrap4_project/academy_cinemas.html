@@ -110,16 +110,79 @@
               </div>
             </div>
           </div>
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+          <div class="container">
+            <h1 class="display-4 hidden-sm-down" style="color: #fff; font-family:roboto; font-weight:900; text-transform:uppercase;">
+             Movie Deals
+            </h1>
+            <p class="lead">Check out our monthly deals</p>
+            <button type="button" class="btn btn-outline-primry" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+          </div>
+        </div>
+        
+      <!--Bootstrap Modal-->  
+      <div id="register" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Register to get movie deals</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-group">
+                <label for="first">First Name:</label>
+                <input type="text" class="form-control" id="first">
+              </div>
+              <div class="form-group">
+                <label for="last">Last name:</label>
+                <input type="text" class="form-control" id="last">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+    </div>
+
+  </div>
+</div>
+
+  <!--Bootstrap Popover-->
         <div class="text-center" id="deals">
-            <form>
+            <form action="#">
                 <h1 class="text-primary my-5">Sign Up for Movie Club Rewards!</h1>
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" data-toggle="popover" data-content="Sign up to join our rewards club and earn free movie tickets!" data-trigger="hover" >Submit</button>
               </form>
         </div>
     </div>
+    
+    <!--Bootstrap Filter List-->
+    <div class="container my-5">
+     <h3 class="text-center my-4 text-info">Coming Soon... Our Classical Film Festival</h2>
+        <input class="form-control" id="myInput" type="text" placeholder="Search the growing list of films that will be included during our upcoming 3 day festival">
+      <br>
+      <ul class="list-group" id="myList">
+        <li class="list-group-item">Casablanca</li>
+        <li class="list-group-item">Citizen Kane</li>
+        <li class="list-group-item">Sullivan's Travels</li>
+        <li class="list-group-item">Sunset Blvd</li>
+        <li class="list-group-item">Tokyo Story</li>
+        
+        <li></li>
+      </ul>  
+    </div>
+    
+
     <div class="container my-5">
         <ul class="nav">
             <li class="nav-item">
@@ -139,8 +202,28 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     
+    <script>
+      $(document).ready(function(){
+        // enables boostrap popover
+        $('[data-toggle="popover"]').popover();   
+        // enables bootstrap filter of list
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myList li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+       
+      });
+
+      
+      </script>
+ 
   </body>
 </html>
